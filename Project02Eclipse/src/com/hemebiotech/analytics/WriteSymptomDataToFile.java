@@ -15,6 +15,11 @@ public class WriteSymptomDataToFile implements ISymptomWriter{
         this.filepath = filepath;
     }
 
+    /**
+     * Writes a Map of symptoms to an output file, one per line, in the format "symptom:count"
+     *
+     * @param symptoms a Map of symptoms to their counts
+     */
     @Override
     public void writeSymptoms(Map<String, Integer> symptoms) {
         if (filepath != null) {
