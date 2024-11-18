@@ -20,7 +20,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
      * @param symptoms a Map of symptoms to their counts
      */
     @Override
-    public void writeSymptoms(Map<String, Integer> symptoms) {
+    public void WriteSymptoms(Map<String, Integer> symptoms) {
         if (filepath != null) {
             try {
                 FileWriter writer = new FileWriter(filepath);
