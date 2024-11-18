@@ -10,6 +10,7 @@ import java.util.Map;
 public interface ISymptomWriter {
     /**
      * Writes a Map of symptoms to an output destination, with the exact format determined by the implementing class
+     *
      * @param symptoms a Map of symptoms to their counts
      */
     void writeSymptoms(Map<String, Integer> symptoms);

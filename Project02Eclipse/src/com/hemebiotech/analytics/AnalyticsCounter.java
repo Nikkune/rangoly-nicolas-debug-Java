@@ -11,6 +11,7 @@ public class AnalyticsCounter {
 
     /**
      * Constructor for AnalyticsCounter
+     *
      * @param reader an ISymptomReader
      * @param writer an ISymptomWriter
      */
@@ -22,6 +23,7 @@ public class AnalyticsCounter {
     /**
      * Returns a list of symptoms from the ISymptomReader
      * The list may contain duplicates
+     *
      * @return a list of symptoms
      */
     public List<String> getSymptoms() {
@@ -50,6 +52,7 @@ public class AnalyticsCounter {
 
     /**
      * Sorts the provided map of symptoms by key in ascending order.
+     *
      * @param symptoms a map of symptoms to be sorted
      * @return a sorted map of symptoms
      */
@@ -59,6 +62,7 @@ public class AnalyticsCounter {
 
     /**
      * Writes the provided map of symptoms to the ISymptomWriter.
+     *
      * @param symptoms a map of symptoms to be written
      */
     public void writeSymptoms(Map<String, Integer> symptoms) {
