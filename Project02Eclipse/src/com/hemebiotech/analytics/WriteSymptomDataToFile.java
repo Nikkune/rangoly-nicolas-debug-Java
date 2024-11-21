@@ -5,14 +5,6 @@ import java.io.IOException;
 import java.util.Map;
 
 public class WriteSymptomDataToFile implements ISymptomWriter {
-    private final String filepath;
-
-    /**
-     * @param filepath a full or partial path to file with symptom strings in it, one per line
-     */
-    public WriteSymptomDataToFile(String filepath) {
-        this.filepath = filepath;
-    }
 
     /**
      * Writes a Map of symptoms to an output file, one per line, in the format "symptom:count"
@@ -21,9 +13,8 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
      */
     @Override
     public void WriteSymptoms(Map<String, Integer> symptoms) {
-        if (filepath != null) {
             try {
-                FileWriter writer = new FileWriter(filepath);
+                FileWriter writer = new FileWriter("result.out");
                 for (Map.Entry<String, Integer> entry : symptoms.entrySet()) {
                     writer.write(entry.getKey() + ":" + entry.getValue() + "\n");
                 }
@@ -31,6 +22,5 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
     }
 }

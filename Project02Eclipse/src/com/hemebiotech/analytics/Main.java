@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         // Define the reader and writer with the appropriate files paths
         ISymptomReader reader = new ReadSymptomDataFromFile("Project02Eclipse/symptoms.txt");
-        ISymptomWriter writer = new WriteSymptomDataToFile("result.out");
+        ISymptomWriter writer = new WriteSymptomDataToFile();
         AnalyticsCounter counter = new AnalyticsCounter(reader, writer);
 
         // Run the analytics in the order they should be run
