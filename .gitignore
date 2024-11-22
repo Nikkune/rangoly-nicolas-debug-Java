@@ -14,4 +14,4 @@ out
 *.sw?
 
 # Custom directories and files
-/result.out
+Project02Eclipse/result.out
