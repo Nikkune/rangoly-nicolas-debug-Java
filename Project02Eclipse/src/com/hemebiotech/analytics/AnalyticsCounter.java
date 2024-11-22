@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * AnalyticsCounter is a class that counts the occurrences of each symptom in a list of symptoms obtained from
+ * an ISymptomReader, and writes the results to an ISymptomWriter
+ */
 public class AnalyticsCounter {
     private final ISymptomReader reader;
     private final ISymptomWriter writer;

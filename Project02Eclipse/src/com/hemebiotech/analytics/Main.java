@@ -3,6 +3,11 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Main class for the Analytics application.
+ * <p>
+ * This class reads a list of symptoms from a file, counts the occurrences of each symptom, sorts the list by key in ascending order and writes the sorted list to an output file.
+ */
 public class Main {
     /**
      * Main method for this application.
