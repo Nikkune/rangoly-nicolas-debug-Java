@@ -15,9 +15,9 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
      * @param symptoms a Map of symptoms to their counts
      */
     @Override
-    public void WriteSymptoms(Map<String, Integer> symptoms) {
+    public void writeSymptoms(Map<String, Integer> symptoms) {
         try {
-            FileWriter writer = new FileWriter("result.out");
+            FileWriter writer = new FileWriter("Project02Eclipse/result.out");
             for (Map.Entry<String, Integer> entry : symptoms.entrySet()) {
                 writer.write(entry.getKey() + ":" + entry.getValue() + "\n");
             }

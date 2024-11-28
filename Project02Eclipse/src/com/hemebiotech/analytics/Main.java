@@ -15,6 +15,7 @@ public class Main {
      * @param args The command line arguments, currently unused.
      */
     public static void main(String[] args) {
+        System.out.println("Starting analytics...");
         // Define the reader and writer with the appropriate files paths
         ISymptomReader reader = new ReadSymptomDataFromFile("Project02Eclipse/symptoms.txt");
         ISymptomWriter writer = new WriteSymptomDataToFile();
@@ -25,5 +26,6 @@ public class Main {
         Map<String, Integer> counts = counter.countSymptoms(symptoms);
         Map<String, Integer> sorted = counter.sortSymptoms(counts);
         counter.writeSymptoms(sorted);
+        System.out.println("Analytics complete.");
     }
 }
